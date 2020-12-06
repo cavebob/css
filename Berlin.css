@@ -27,6 +27,7 @@
     --HoverHighlightlight: #c7e7ff;
     --GenresColor: #78baec;
 }
+
 #torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="] {
     background-color: var(--InternalColor);
     color: var(--tagText);
@@ -251,7 +252,7 @@ a:visited,
 a.catlink:link,
 a.catlink:visited {
     color: var(--white);
-    /* text-decoration: underline; */
+    text-decoration: none;
     -webkit-transition: color 0.2s linear;
     -moz-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
