@@ -27,17 +27,15 @@
     --HoverHighlightlight: #c7e7ff;
     --GenresColor: #78baec;
 }
-#torrent-list tr > td:nth-child(3) > a[href^="https://hdbits.org/film/info?id="]
-    {
- /* border: 1px solid; */
- background-color: var(--InternalColor);
- color: var(--tagText);
- font-size: 9px;
- font-weight: bold;
- align-self: center;
- padding-left: 1px;
- padding-right: 1px;
- text-decoration: none;
+#torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="] {
+    background-color: var(--InternalColor);
+    color: var(--tagText);
+    font-size: 9px;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-decoration: none;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
