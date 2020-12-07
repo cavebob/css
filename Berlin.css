@@ -5,26 +5,6 @@
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
-/* 
-    making variables:
-    declaring: --variableName: value; 
-    usage: property: var(--variableName); 
-    
-    example: 
-    declaration: --darkColor1: #333;#141e24
-    usage: background: var(--MainColor);
-*/
-/*:root {
-    --MainColor: #11202C;
-    --UsernameColor: #F8D063;
-    --TableCellColor: #1d3549;
-    --DarkestColor: #0f1a24;
-    --TableCellColor2: #1a2230;
-    --TableCellColor3: #112c3d;
-    --white: #eeeeee;
-    --searchDropdown: #1d3549;
-    --selected:  #274863;
-}*/
 :root {
     --MainColor: #072336;
     --UsernameColor: #ffd56b;
@@ -47,30 +27,39 @@
     --HoverHighlight: #041824;
     --HoverHighlightlight: #c7e7ff;
     --GenresColor: #78baec;
-    --borderShadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.5);
+    --borderShadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    /* --borderShadow: 0 0.6rem 2rem 5px rgba(0, 0, 0, 0.6); */
 }
-#torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="]
+#torrent-list tr > td:nth-child(3) > a[href^="https://hdbits.org/film/info?id="]
     {
- /* border: 1px solid; */
- background-color: var(--InternalColor);
- color: var(--tagText);
- font-size: 9px;
+ background-color: var(--MainColor);
+ color: var(--InternalColor);
+ font-size: 10px;
  font-weight: bold;
  align-self: center;
  padding-left: 1px;
  padding-right: 1px;
  text-decoration: none;
+ margin-left: 5px;
+ border: 1px solid var(--InternalColor);
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     html {
         zoom: 75%;
     }
 }
-html,
-table.mainouter,
-div.footer {
+td.embedded {
+    border: none;
+    padding: 0;
+    text-align: left;
     background: none;
+    overflow: auto;
 }
+html body table.main tbody tr td.bottom table.main tbody tr td.embedded div#news h2
+{
+    margin-top: 5px;
+}
+
 div.footer {
     position: absolute;
     width: 100%;
@@ -78,21 +67,25 @@ div.footer {
     padding-bottom: 20px;
 }
 body {
-    background: var(--MainColor);
     color: var(--white);
     margin: 102px 0 0;
     padding: 10px 20px 20px 0px;
+    background: var(--MainColor) url("https://i.hdbits.org/eOJKIzM.png") ;
  }
 body > table.main {
     background: none;
     border: none;
 }
+html,
+table.main,
+table.mainouter,
+div.footer {
+    background: none;
+}
 table {
     background-color: var(--TableCellColor2);
 }
-table.main {
-    background-color: var(--MainColor);
-}
+
 table.message,
 table[border="1"],
 th,
@@ -246,8 +239,16 @@ input[type="reset"]:active {
 }
 h1 {
     font-size:21px;
-    color: var(--UsernameColor);
-    padding-bottom: 2;
+    color: var(--MenuFontColor);
+    text-shadow: var(--borderShadow);
+   }
+   html body table.main tbody tr td.bottom table.main tbody tr td.embedded h1 
+   {
+       /* margin-top: 10px; */
+    font-size:21px;
+    color: var(--InternalColor);
+    text-shadow: var(--borderShadow);
+    padding-bottom: 15px;
    }
 a,
 a.catlink {
@@ -394,19 +395,9 @@ a[href^="userdetails.php?id="]:active,
 a.altlink[href^="userdetails.php?id="]:hover,
 a.altlink[href^="userdetails.php?id="]:focus,
 a.altlink[href^="userdetails.php?id="]:active {
-    color: var(--MainColor);
-    text-decoration: none;
-    text-shadow: 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white),
-        0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white), 0 0 0.2em var(--white);
+    color: var(--UsernameColor);
 }
-a[href^="/userdetails.php?id="]:active,
-a[href^="userdetails.php?id="]:active,
-a.altlink[href^="userdetails.php?id="]:active {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-}
+
 td.comment,
 td.text {
     font-size: 14px;
@@ -2332,4 +2323,149 @@ h2[style="width: 743px;"] {
     box-sizing: border-box;
     border-collapse: separate;
     border-spacing: 0;
+}
+
+
+#codec0,
+#codec1,
+#codec2,
+#codec3,
+#codec4,
+#codec5,
+.medium1,
+.medium2,
+.medium3,
+.medium4,
+.medium5,
+.medium6,
+.category1,
+.category2,
+.category3,
+.category4,
+.category5,
+.category6,
+.category7,
+.category8 {
+ height:42px;
+ width:42px;
+ padding:0 !important
+}
+.category1 {
+ background-image:url(./movie.svg)
+}
+.category2 {
+ background-image:url(./tv.svg)
+}
+.category3 {
+ background-image:url(./doc.svg)
+}
+.category4 {
+ background-image:url(./music.png)
+}
+.category5 {
+ background-image:url(./sport.png)
+}
+.category6 {
+ background-image:url(./audio.svg)
+}
+.category7 {
+ background-image:url(./xxx.png)
+}
+.category8 {
+ background-image:url(./misc.png)
+}
+.catcell {
+ padding:0 !important;
+ border-width:0 0 1px 1px;
+ width:42px
+}
+#codec1 .medium1 {
+ background-image:url(./h264-bluray-01.svg)
+}
+#codec1 .medium3 {
+ background-image:url(./h264-encode.png)
+}
+#codec1 .medium4 {
+ background-image:url(./h264-capture.png)
+}
+#codec1 .medium5 {
+ background-image:url(./h264-remux.png)
+}
+#codec1 .medium6 {
+ background-image:url(./h264-webdl.png)
+}
+#codec2 .medium1 {
+ background-image:url(./mpeg2-bluray.png)
+}
+#codec2 .medium3 {
+ background-image:url(./mpeg2-encode.png)
+}
+#codec2 .medium4 {
+ background-image:url(./mpeg2-capture.png)
+}
+#codec2 .medium5 {
+ background-image:url(./mpeg2-remux.png)
+}
+#codec2 .medium6 {
+ background-image:url(./mpeg2-webdl.png)
+}
+#codec3 .medium1 {
+ background-image:url(./vc1-bluray.png)
+}
+#codec3 .medium3 {
+ background-image:url(./vc1-encode.png)
+}
+#codec3 .medium4 {
+ background-image:url(./vc1-capture.png)
+}
+#codec3 .medium5 {
+ background-image:url(./vc1-remux.png)
+}
+#codec3 .medium6 {
+ background-image:url(./vc1-webdl.png)
+}
+#codec4 .medium1 {
+ background-image:url(./xvid-bluray.png)
+}
+#codec4 .medium3 {
+ background-image:url(./xvid-encode.png)
+}
+#codec4 .medium4 {
+ background-image:url(./xvid-capture.png)
+}
+#codec4 .medium5 {
+ background-image:url(./xvid-remux.png)
+}
+#codec4 .medium6 {
+ background-image:url(./xvid-webdl.png)
+}
+#codec5 .medium1 {
+ background-image:url(./hevc-bluray.png)
+}
+#codec5 .medium3 {
+ background-image:url(./hevc-encode.png)
+}
+#codec5 .medium4 {
+ background-image:url(./hevc-capture.png)
+}
+#codec5 .medium5 {
+ background-image:url(./hevc-remux.png)
+}
+#codec5 .medium6 {
+ background-image:url(./hevc-webdl.png)
+}
+#codec6 .medium1 {
+ background-image:url(./vp9-bluray.png)
+}
+#codec6 .medium3 {
+ background-image:url(./vp9-encode.png)
+}
+#codec6 .medium4 {
+ background-image:url(./vp9-capture.png)
+}
+#codec6 .medium5 {
+ background-image:url(./vp9-remux.png)
+}
+#codec6 .medium6 {
+ background-image:url(./vp9-webdl.png)
 }
