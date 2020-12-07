@@ -83,6 +83,13 @@ body > table.main {
     background: none;
     border: none;
 }
+html body table.main tbody tr td.bottom form ul#tabs li.tab
+{
+    font-size: 11px;
+    margin: none;
+    padding-inline: 5px;
+}
+
 html,
 table.main,
 table.mainouter,
@@ -251,11 +258,10 @@ h1 {
    }
    html body table.main tbody tr td.bottom table.main tbody tr td.embedded h1 
    {
-       /* margin-top: 10px; */
     font-size:21px;
-    color: var(--InternalColor);
+    color: var(--MenuFontColor);
     text-shadow: var(--borderShadow);
-    padding-bottom: 15px;
+    padding-bottom: 5px;
    }
 a,
 a.catlink {
