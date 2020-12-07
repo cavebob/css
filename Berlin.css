@@ -30,7 +30,14 @@
     --borderShadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
     /* --borderShadow: 0 0.6rem 2rem 5px rgba(0, 0, 0, 0.6); */
 }
-#torrent-list tr > td:nth-child(3) > a[href^="https://hdbits.org/film/info?id="]
+.donor {
+    /* width:11px;
+    height:10px; */
+    /* display:inline-block; */
+    /* background-position:-22px -2px; */
+    background: url("https://i.hdbits.org/0EYQash.png");
+   }
+#torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="]
     {
  background-color: var(--MainColor);
  color: var(--InternalColor);
