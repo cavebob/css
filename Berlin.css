@@ -1058,18 +1058,18 @@ td.bottom > table[width="500"]:first-of-type td a:active {
 #torrent-list > tbody > tr:nth-of-type(even) {
     background-color: var(--TableCellColor3);
 }
-#torrent-list > tbody > tr:nth-of-type(odd).featured {
+/* #torrent-list > tbody > tr:nth-of-type(odd).featured {
     background-color: var(--featuredOdd);
-}
+}*/
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(odd).featured {
     background-color: var(--TableCellColor2);
 }
-#torrent-list > tbody > tr:nth-of-type(even).featured {
-    background-color: #var(--featuredEven);
-}
+/* #torrent-list > tbody > tr:nth-of-type(even).featured {
+    background-color: var(--featuredEven);
+} */
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(even).featured {
     background-color: var(--TableCellColor3);
-}
+} 
 #torrent-list > tbody > tr:hover,
 #torrent-list > tbody > tr.featured:hover,
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr.featured:hover {
