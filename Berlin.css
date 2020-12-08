@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.39
+ * Version:        0.40
  * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -51,6 +51,52 @@
         zoom: 75%;
     }
 }
+.label.collapsable {
+    color: var(--MenuFontColor)
+}
+.hideablecontent{
+    padding: 15px;
+    background: #041824a4;
+    box-shadow: 0 0 1rem 1px rgba(0, 0, 0 , 0.5);
+    border: thick double var(--MainColor);
+}
+.list-overview {
+	display: hidden;
+	position: relative;
+	width: calc(100% - 2px);
+    margin: 2px;
+}
+html body table.main tbody tr td.bottom table#details tbody tr td div#c78210374.hideablecontent div.grid div.grid__50
+{
+    margin-right: 15px; 
+    width: auto;
+}
+.list-overview__overlay
+{
+    width: 25%;
+}
+div.list-overview__overlay div.list-overview__text {
+    font-size: 12px;
+    width: auto;
+    background-color: #041824a4;
+}
+.list-overview__img {
+	width: 100%;
+    height: 150px;
+}
+#details tbody tr td table.main.tablesorter.table_other_copies tbody
+{
+    border: 1px solid var(--DarkestColor);
+}
+td.bottom:nth-child(2) > table:nth-child(4)
+{
+    box-shadow: var(--borderShadow);
+}
+html body table.main tbody tr td.bottom div div
+{
+    display: table-header-group;
+}
+html body table.main tbody tr td.bottom table
 td.embedded {
     border: none;
     padding: 0;
@@ -475,7 +521,7 @@ body > table:first-of-type #sitesearchform {
     
     input#sitesearchinput::placeholder {
         color: #356286;
-        opacity: 0.5;
+        opacity: 0.9;
     }
     
     input#sitesearchinput:hover {
@@ -2066,11 +2112,11 @@ table.tableb {
 }
 table.tableb table {
     background-color: var(--MainColor);
-    border: 1px solid #39444c;
+    border: 1px solid var(--DarkestColor);
 }
 table.padding2 {
     background-color: var(--MainColor);
-    border: 1px solid #39444c;
+    border: 1px solid var(--DarkestColor);
 }
 .invite_notice {
     background-color: var(--TableCellColor2);
@@ -2122,7 +2168,7 @@ a[name="startcomments"] ~ table.main:last-of-type table:not([class]) table.main 
     border-spacing: 0;
 }
 .center_comments > table.main:only-of-type > tbody > tr > td > table > tbody > tr > td > p.sub + table.main {
-    border: 1px solid #39444c;
+    border: 1px solid var(--DarkestColor);
 }
 form[name="message"] {
     border: none;
@@ -2326,7 +2372,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main 
     width: 850px;
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child > tbody > tr > td > table.main {
-    border: 1px solid #39444c;
+    border: 1px solid var(--DarkestColor);
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child table.main > tbody > tr > td.embedded > h2,
 body > table.menu + table.main > tbody > tr > td.bottom:last-child table.main > tbody > tr > td.embedded > h2 + table:not([class]) {
@@ -2350,7 +2396,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child table[width="
 body > table.menu + table.main > tbody > tr > td.bottom:last-child table[width="750"] > tbody > tr > td[align="center"] > p + a > table.main,
 body > table.menu + table.main > tbody > tr > td.bottom:last-child table.main > tbody > tr > td.embedded > h2 + table:not([class]) > tbody > tr > td > table.main {
     background-color: var(--MainColor);
-    border: 1px solid #39444c;
+    border: 1px solid var(--DarkestColor);
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded font[size="+3"] ~ * {
     box-sizing: border-box;
