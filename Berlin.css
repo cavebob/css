@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.40
+ * Version:        0.41
  * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -92,11 +92,6 @@ td.bottom:nth-child(2) > table:nth-child(4)
 {
     box-shadow: var(--borderShadow);
 }
-html body table.main tbody tr td.bottom div div
-{
-    display: table-header-group;
-}
-html body table.main tbody tr td.bottom table
 td.embedded {
     border: none;
     padding: 0;
