@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     DarkRevamp
- * Version:        0.26
- * Last Updated:   6 December 2020
+ * Version:        0.33
+ * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -13,7 +13,7 @@
     --TableCellColor2: #072336;
     --TableCellColor3: #072c42;
     --white: #ffffff;
-    --MenuFontColor: #5989ad;
+    --MenuFontColor: #5990b9;
     --searchDropdown: #1d3549;
     --selected:  #356286;
     --RatioBlue: #1685CA;
@@ -145,28 +145,20 @@ td.colhead a:visited:active {
     color: var(--white);
     text-decoration: underline;
 }
-input,
-select,
-textarea,
-button,
-.button {
-    outline: none;
-    border: 1px solid #032333;
-    background-color: var(--searchDropdown);
-    color: var(--white);
-    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+html body table.main tbody tr td.bottom form table#searchbox tbody tr td input#search
+{
+    padding: 4px;
+    font-size: 12px;
 }
 input:focus,
 select:focus,
 textarea:focus,
 button:focus,
 .button:focus {
-    border: 1px solid #22282b;
-    background-color: #c6cfd2;
-    color: var(--searchDropdown);
+    border: 1px solid #00bfff;
+    background-color: var(--MainColor);
+    color:  #00ccff;
 }
 input[disabled] {
     opacity: 0.5;
@@ -179,9 +171,10 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
     outline: none;
-    border: 1px solid #22282b;
+    border: 1px solid var(--DarkestColor);
     background-color: var(--searchDropdown);
-    color: #c6cfd2;
+    color: var(--MenuFontColor);
+
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -197,8 +190,8 @@ button[type="button"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus {
-    border: 1px solid #22282b;
-    background-color: #c6cfd2;
+    border: 1px solid #00bfff;
+    background-color: var(--MainColor);
     color: var(--searchDropdown);
 }
 button:active,
@@ -410,7 +403,6 @@ a.altlink[href^="userdetails.php?id="]:focus,
 a.altlink[href^="userdetails.php?id="]:active {
     color: var(--UsernameColor);
 }
-
 td.comment,
 td.text {
     font-size: 14px;
@@ -428,6 +420,11 @@ body > table:first-of-type {
     background-color: var(--DarkestColor);
     
 }
+/* #sitesearchform {
+    width: 220px;
+    height: 22px;
+    position: relative;
+}
 body > table:first-of-type #sitesearch {
     text-align: center;
 }
@@ -436,7 +433,105 @@ body > table:first-of-type #searchselector li {
 }
 body > table:first-of-type #sitesearchform {
     display: inline-block;
+} */
+#sitesearch {
+    text-align: center;
+    margin-bottom: 20px;      
+    }
+
+#searchselector .selected{
+    color:  #00ccff;
+    font-size: 11px;
+    /* background-color: var(--MainColor); */
+    /* padding-bottom: 6px; */
 }
+
+    #searchselector > li {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 11px;
+        padding: 0 3px;
+        cursor: pointer;
+        color: var(--MenuFontColor);
+    }
+    #searchselector > li:hover{
+        text-shadow: 0 0 6px #9cd4ff;
+        color: #00ccff;
+    } 
+    #sitesearchform {
+        display: inline-block;
+    }
+    #sitesearchinput {
+        border: 1px solid  var(--DarkestColor);
+        background-color: var(--MainColor);
+          padding: 5px;
+        margin-top: 2px;
+          font-size: 13px;
+    }
+    
+    #sitesearchsubmit {
+        float: center;
+      padding: 11px 11px;
+      margin-top: 1px;
+      margin-left: 0px;
+      background: var(--MainColor);
+      font-size: 15px;
+      border-left: 1px solid #00ccff2a;
+      cursor: pointer;
+      border-radius: 0;
+    }
+    
+    input#sitesearchinput::placeholder {
+        color: #356286;
+        opacity: 0.5;
+    }
+    
+    input#sitesearchinput:hover,
+   {
+    border: 1px solid #0af;
+    }
+    #sitesearchsubmit:hover 
+    {
+border-left: 1px solid #00ccff;
+opacity: 0.8;
+    }
+    
+    input#sitesearchinput:focus, select:focus, textarea:focus, button:focus, .button:focus {
+        border: 1px solid #0af;
+        background-color: var(--MainColor);
+        color:  #00ccff;
+        opacity: 1.0;
+        box-shadow: 0px 0px 5px 1px #5989ad;
+        -webkit-transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+        -moz-transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+        -o-transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+        transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+    }
+    .searchicon {
+        background-image: url("https://i.imgur.com/bFmk2fc.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+    #sitesearchinput:focus + .searchicon {
+        background-image: url("https://i.imgur.com/E4x5Zk8.png");
+    }
+    /* #sitesearchsubmit {
+        top: 2px;
+        box-shadow: none;
+    } */
+    
+input,
+select,
+textarea,
+button,
+.button {
+    padding: 2px;
+    outline: none;
+    border: 1px solid var(--MainColor);
+    background-color: var(--searchDropdown);
+    color: #00ccff59;
+}
+
 body > table:first-of-type .embedded {
     text-align: right;
     padding: 0 5px;
@@ -616,18 +711,7 @@ p.sub > a[name]:target {
     color: #ffffff !important;
     font-weight: bold;
 }
-.searchicon {
-    background-image: url("https://i.imgur.com/bFmk2fc.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-}
-#sitesearchinput:focus + .searchicon {
-    background-image: url("https://i.imgur.com/E4x5Zk8.png");
-}
-#sitesearchsubmit {
-    top: 2px;
-    box-shadow: none;
-}
+
 .autocomplete-suggestions {
     background: #c6cfd2;
     color: var(--searchDropdown);
