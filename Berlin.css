@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.38
+ * Version:        0.39
  * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -28,15 +28,12 @@
     --HoverHighlightlight: #c7e7ff;
     --GenresColor: #78baec;
     --borderShadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-    --weirdwhite: #041824; /* var(--weirdwhite)  */
+    --weirdwhite: #041824; 
     --shittyborder: #5990b9;
-    /* --borderShadow: 0 0.6rem 2rem 5px rgba(0, 0, 0, 0.6); */
 }
-
 .donor {
     background: url("https://i.hdbits.org/0EYQash.png");
 }
-
 #torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="] {
  background-color: var(--MainColor);
  color: var(--InternalColor);
@@ -49,13 +46,11 @@
  margin-left: 5px;
  border: 1px solid var(--InternalColor);
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     html {
         zoom: 75%;
     }
 }
-
 td.embedded {
     border: none;
     padding: 0;
@@ -66,51 +61,43 @@ td.embedded {
 html body table.main tbody tr td.bottom table.main tbody tr td.embedded div#news h2 {
     margin-top: 5px;
 }
-
 div.footer {
     position: absolute;
     width: 100%;
     left: 0;
     padding-bottom: 20px;
 }
-
 body {
     color: var(--white);
     margin: 130px 0 0;
     padding: 10px 20px 20px 0px;
     background: var(--MainColor) url("https://i.hdbits.org/eOJKIzM.png") ;
 }
-
 body > table.main {
     background: none;
     border: none;
 }
-
 html body table.main tbody tr td.bottom form ul#tabs li.tab
 {
     font-size: 12px;
     margin: none;
     padding-inline: 5px;
 }
-
 html,
 table.main,
 table.mainouter,
 div.footer {
     background: none;
 }
-
 table {
     background-color: var(--TableCellColor2);
 }
-
 table.message,
 table[border="1"],
 th,
 td {
     border: none;
 }
-
 th,
 h2,
 td.colhead {
@@ -120,7 +107,6 @@ td.colhead {
     background-color: var(--DarkestColor);
     color: var(--white);
 }
-
 th a:link,
 th a:visited,
 h2 a:link,
@@ -130,7 +116,6 @@ td.colhead a:visited {
     color: var(--white);
     text-decoration: none;
 }
-
 th a:link:hover,
 th a:link:focus,
 th a:link:active,
@@ -152,7 +137,6 @@ td.colhead a:visited:active {
     color: var(--white);
     text-decoration: underline;
 }
-
 html body table.main tbody tr td.bottom form table#searchbox tbody tr td input#search
 {
     padding: 4px;
@@ -494,17 +478,14 @@ body > table:first-of-type #sitesearchform {
         opacity: 0.5;
     }
     
-    input#sitesearchinput:hover,
-   {
+    input#sitesearchinput:hover {
     border: 1px solid #0af;
     }
-    #sitesearchsubmit:hover 
-    {
-/* border-left: 1px solid #00ccffd7; */
+    #sitesearchsubmit:hover {
 opacity: 1.0;
     }
     
-    div#sitesearch form#sitesearchform input#sitesearchinput:focus, /*select:focus,*/ textarea:focus, button:focus, .button:focus {
+    div#sitesearch form#sitesearchform input#sitesearchinput:focus, textarea:focus, button:focus, .button:focus {
         border: 1px solid #0af;
         background-color: var(--MainColor);
         color:  #00ccff;
@@ -515,26 +496,12 @@ opacity: 1.0;
         -o-transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
     }
-    /*.searchicon {
-        background-image: center no-repeat url('C:\Users\Franky\Desktop\Final Files\loupe.png');
-        z-index: 10;
-    }*/
-    /*
-    #sitesearchinput:focus + .searchicon {
-        background-image: url("https://i.imgur.com/E4x5Zk8.png");
-    } */
-    /* #sitesearchsubmit {
-        top: 2px;
-        box-shadow: none;
-    } */
-    
-
 input,
 select,
 textarea,
 button,
 .button {
-    padding: 2px;
+    /* padding: 2px; */
     outline: none;
     border: 1px solid var(--MainColor);
     background-color: var(--searchDropdown);
@@ -576,8 +543,6 @@ div#logo {
     margin: 10px;
     margin-left: 15px;
     margin-top: 10px;
-    /* width: 350px !important;
-    height: 39px !important; */
 }
 #donate {
     background: none;
@@ -751,14 +716,10 @@ border: 2px solid transparent var(--DarkestColor);
 td.menunavigation a.normal,
 td.menunavigation_new a.normal {
     padding-top: 5px;
-padding-bottom: 5px;
+    padding-bottom: 5px;
     width: 100%;
     color: var(--MenuFontColor);
     box-shadow: none;
-    /* -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out; */
 }
 td.menunavigation a.normal:active,
 td.menunavigation_new a.normal:active {
@@ -1141,15 +1102,9 @@ line-height: 23px;
 #torrent-list > tbody > tr:nth-of-type(even) {
     background-color: var(--TableCellColor3);
 }
-/* #torrent-list > tbody > tr:nth-of-type(odd).featured {
-    background-color: var(--featuredOdd);
-}*/
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(odd).featured {
     background-color: var(--TableCellColor2);
 }
-/* #torrent-list > tbody > tr:nth-of-type(even).featured {
-    background-color: var(--featuredEven);
-} */
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(even).featured {
     background-color: var(--TableCellColor3);
 } 
