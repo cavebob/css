@@ -81,7 +81,7 @@ div.list-overview__overlay div.list-overview__text {
     background-color: #041824a4;
 }
 .list-overview__img {
-	width: 100%;
+	width: auto;
     height: 150px;
 }
 #details tbody tr td table.main.tablesorter.table_other_copies tbody
@@ -92,9 +92,13 @@ td.bottom:nth-child(2) > table:nth-child(4)
 {
     box-shadow: var(--borderShadow);
 }
+body > table:nth-child(3) > tbody > tr > td:nth-child(2) > table > tbody > tr > td
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 td.embedded {
     border: none;
-    padding: 0;
     text-align: left;
     background: none;
     overflow: auto;
@@ -110,7 +114,7 @@ div.footer {
 }
 body {
     color: var(--white);
-    margin: 130px 0 0;
+    margin: 137px 0 0;
     padding: 10px 20px 20px 0px;
     background: var(--MainColor) url("https://i.hdbits.org/eOJKIzM.png") ;
 }
@@ -840,8 +844,9 @@ td.menunavigation_new a:active {
 td#sidebar-container { 
     position: fixed;
     display: block;
-    top: 15;
-    padding: 0 !important;
+    /* top: 15; */
+    padding: 0;
+    margin-left: -10px;
     height: auto;
     max-height: 100%;
     -webkit-transition: width 0.15s ease;
@@ -855,7 +860,7 @@ td#sidebar-container .main {
     position: relative;
     background-color: var(--DarkestColor);
     box-shadow: var(--borderShadow);
-    margin: 90px 0 10px 0;
+    /* margin: 90px 0 10px 0; */
     padding: 0;
 } 
 
@@ -1903,7 +1908,6 @@ td.embedded[bgcolor="#ECE9D8"] {
     border: none !important;
 }
 #details {
-    border: 1px solid var(--DarkestColor);
     box-shadow: var(--borderShadow);
     box-sizing: border-box;
     border-collapse: separate;
@@ -1918,7 +1922,7 @@ td.embedded[bgcolor="#ECE9D8"] {
     color: inherit;
 }
 .contentlayout h3 {
-    color: rgba(0, 140, 255, 0.5);
+    color: var(--MenuFontColor);
 }
 .contentlayout,
 .content,
@@ -2423,6 +2427,8 @@ h2[style="width: 743px;"] {
     box-shadow: var(--borderShadow);
 }
 
+
+/* Category icons */
 #codec0,
 #codec1,
 #codec2,
@@ -2565,4 +2571,12 @@ h2[style="width: 743px;"] {
 }
 #codec6 .medium6 {
  background-image:url(./vp9-webdl.png)
+}
+
+/* Subtitle icons */
+/* apply to all /pic/flag/ icons */ 
+img[src*="pic/flag/"] { 
+   width: 30px;
+   object-fit: none;
+   filter: grayscale(40%);
 }
