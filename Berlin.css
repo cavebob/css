@@ -37,7 +37,7 @@
     background: url("https://i.hdbits.org/0EYQash.png");
 }
 
-#torrent-list tr > td:nth-child(3) > a[href^="https://hdbits.org/film/info?id="] {
+#torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="] {
  background-color: var(--MainColor);
  color: var(--InternalColor);
  font-size: 10px;
