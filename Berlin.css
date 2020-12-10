@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.37
- * Last Updated:   8 December 2020
+ * Version:        1.1
+ * Last Updated:   10 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -410,7 +410,7 @@ table.tablesorter {
     transition: background-color 0.2s ease-out;
 }
 .tablesorter > tbody > tr:hover {
-    background-color: var(--selected);
+    background-color: var(--darkestcolor);
 }
 hr {
     border-color: var(--white) !important;
@@ -726,8 +726,8 @@ p.sub > a[name]:target {
     font-weight: bold;
 }
 .alert-box--news {
-    background-color: var(--selected);
-    color: var(--white) !important;
+    background-color: var(--highlightmenutext);
+    color: var(--darkestcolor) !important;
     font-weight: bold;
 }
 
@@ -1045,8 +1045,8 @@ td.bottom > table[width="500"]:first-of-type td a {
     height: 23px;
     line-height: 23px;
     border-radius: 3px;
-    background-color: var(--TableCellColor);
-    color: var(--selected);
+    background-color: var(--DarkestColor);
+    color: var(--MenuFontColor);
     text-decoration: none;
     display: inline-block;
     width: 100%;
@@ -1061,21 +1061,21 @@ td.bottom > table[width="800"]:first-of-type td a:hover,
 td.bottom > table[width="800"]:first-of-type td a:focus,
 td.bottom > table[width="500"]:first-of-type td a:hover,
 td.bottom > table[width="500"]:first-of-type td a:focus {
-    background-color: var(--selected);
-    color: var(--TableCellColor);
+    background-color: var(--DarkestColor);
+    color: var(--highlightmenutext);
 }
 td.bottom > table[width="800"]:first-of-type td a:active,
 td.bottom > table[width="500"]:first-of-type td a:active {
-    background-color: #84909a;
-    color: var(--TableCellColor);
+    background-color: var(--DarkestColor);
+    color: var(--maincolor);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
 }
 .submenu-highlight__link {
-    background-color: var(--selected) !important;
-    color: var(--TableCellColor) !important;
+    background-color: var(--DarkestColor) !important;
+    color: var(--highlightmenutext) !important;
 }
 #tabs > .tab {
     border: none;
@@ -1444,11 +1444,74 @@ html .rc__row {
     background-color: rgba(255, 255, 255, 0.2);
 }
 html .rc__toggle {
-    background-color: var(--TableCellColor);
-    color: var(--selected);
+    font-size: 20px;
+    background-color: var(--DarkestColor);
+    color: var(--MenuFontColor);
+    border-top: 3px solid var(--MenuFontColor);
+}
+.rc__toggle:hover {
+    color: var(--highlightmenutext);
+    border-top: 3px solid var(--highlightmenutext);
 }
 html .rc__film__poster {
     object-fit: fill;
+}
+.rc__header {
+    padding: 15px;
+    background: var(--DarkestColor);
+    color: var(--highlightmenutext);
+    /* border-top: 3px solid var(--highlightmenutext); */
+    border-bottom: 3px solid var(--MenuFontColor);
+}
+.rc__downloads {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2px 5px;
+	border-radius: 4px 4px 0 0;
+
+    background-color: var(--DarkestColor) !important ;
+    color: var(--highlightmenutext) !important ;
+	font-size: 11px !important;
+	opacity: .85;
+}
+.rc__rating::before {
+	content: 'IMDb: ' !important;
+}
+.rc__rating {
+    border: 1px solid var(--InternalColor);
+    background-color: var(--DarkestColor);
+    color: var(--InternalColor);
+    font-size: 11px !important;
+    font-weight: 700;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 3px;
+}
+.rc__plot {
+	position: absolute;
+	top: 108px;
+	left: 0;
+	right: 0;
+	height: 125px;
+	font-size: 11px !important;
+	padding: 16px 10px 0;
+	overflow: hidden;
+}
+/* html body table.main tbody tr td.bottom div.rc.js-rc div.rc__container.js-rc-container */
+.rc__container.js-rc-container {
+    background-color: var(--collapsables);
+
+}
+html body table.main tbody tr td.bottom div.rc.js-rc
+{
+    box-shadow: var(--borderShadow);
+
+}
+div.rc:nth-child(6) > div:nth-child(2) > div:nth-child(5) > a:nth-child(2) > div:nth-child(4) > span.movie_name {
+    padding-bottom: 5px;
+    color: var(--highlightmenutext);
+    border-bottom: 1px solid var(--highlightmenutext);
 }
 html .info_row {
     border-color: var(--white);
