@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.44
- * Last Updated:   10 December 2020
+ * Version:        0.37
+ * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -12,7 +12,7 @@
     --DarkestColor: #041824; /* Header, Menu, Sidebar Main, Table Main */
     --TableCellColor2: #072336;
     --TableCellColor3: #072c42;
-    --white: #ffffff;
+    --white: #eeeeee;
     --MenuFontColor: #5990b9;
     --searchDropdown: #1d3549;
     --selected:  #356286;
@@ -30,6 +30,10 @@
     --borderShadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
     --weirdwhite: #041824; 
     --shittyborder: #5990b9;
+    --highlightmenutext:  #0cf;
+    --hovernotifications: #4bdbff;
+    --collapsables:  #041824a4;
+    
 }
 .donor {
     background: url("https://i.hdbits.org/0EYQash.png");
@@ -56,7 +60,7 @@
 }
 .hideablecontent{
     padding: 15px;
-    background: #041824a4;
+    background: var(--collapsables);
     box-shadow: 0 0 1rem 1px rgba(0, 0, 0 , 0.5);
     border: thick double var(--MainColor);
 }
@@ -78,7 +82,7 @@ html body table.main tbody tr td.bottom table#details tbody tr td div#c78210374.
 div.list-overview__overlay div.list-overview__text {
     font-size: 12px;
     width: auto;
-    background-color: #041824a4;
+    background-color: var(--collapsables);
 }
 .list-overview__img {
 	width: auto;
@@ -92,16 +96,11 @@ td.bottom:nth-child(2) > table:nth-child(4)
 {
     box-shadow: var(--borderShadow);
 }
-body > table:nth-child(3) > tbody > tr > td:nth-child(2) > table > tbody > tr > td
-{
-    padding-left: 15px;
-    padding-right: 15px;
-}
 td.embedded {
     border: none;
     text-align: left;
     background: none;
-    overflow: auto;
+    overflow: visible;
 }
 html body table.main tbody tr td.bottom table.main tbody tr td.embedded div#news h2 {
     margin-top: 5px;
@@ -192,9 +191,9 @@ select:focus,
 textarea:focus,
 button:focus,
 .button:focus {
-    border: 1px solid #00bfff;
+    border: 1px solid var(--highlightmenutext);
     background-color: var(--MainColor);
-    color:  #00ccff;
+    color:  var(--highlightmenutext);
 }
 input[disabled] {
     opacity: 0.5;
@@ -225,7 +224,7 @@ button[type="button"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus {
-    border: 1px solid #00bfff;
+    border: 1px solid var(--highlightmenutext);
     background-color: var(--MainColor);
     color: var(--searchDropdown);
 }
@@ -311,7 +310,7 @@ a:active,
 a.catlink:hover,
 a.catlink:focus,
 a.catlink:active {
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 a:active,
@@ -344,7 +343,7 @@ a.catlink:link:active,
 a.catlink:visited:hover,
 a.catlink:visited:focus,
 a.catlink:visited:active {
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 a:link:active,
@@ -367,7 +366,7 @@ a.altlink {
 a.altlink:hover,
 a.altlink:focus,
 a.altlink:active {
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 a.altlink:active {
@@ -391,7 +390,7 @@ a.altlink:link:active,
 a.altlink:visited:hover,
 a.altlink:visited:focus,
 a.altlink:visited:active {
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 a.altlink:link:active,
@@ -475,7 +474,7 @@ body > table:first-of-type #sitesearchform {
     }
 
 #searchselector .selected{
-    color:  #00ccff;
+    color:  var(--highlightmenutext);
     font-size: 11px;
     /* background-color: var(--MainColor); */
     /* padding-bottom: 6px; */
@@ -490,8 +489,8 @@ body > table:first-of-type #sitesearchform {
         color: var(--MenuFontColor);
     }
     #searchselector > li:hover{
-        text-shadow: 0 0 6px #9cd4ff;
-        color: #00ccff;
+        text-shadow: 0 0 6px var(--highlightmenutext);
+        color: var(--highlightmenutext);
     } 
     #sitesearchform {
         display: inline-block;
@@ -513,27 +512,27 @@ body > table:first-of-type #sitesearchform {
       background: var(--MainColor) center no-repeat url(https://i.hdbits.org/o8Ps0IT.png);
       opacity: 0.3;
       font-size: 15px;
-      border-left: 1px solid #00ccff5b;
+      border-left: 1px solid var(--highlightmenutext);
       cursor: pointer;
       border-radius: 0;
     }
     
     input#sitesearchinput::placeholder {
-        color: #356286;
-        opacity: 0.9;
+        color: var(--highlightmenutext);
+        opacity: 0.5;
     }
     
     input#sitesearchinput:hover {
-    border: 1px solid #0af;
+    border: 1px solid var(--highlightmenutext);
     }
     #sitesearchsubmit:hover {
 opacity: 1.0;
     }
     
     div#sitesearch form#sitesearchform input#sitesearchinput:focus, textarea:focus, button:focus, .button:focus {
-        border: 1px solid #0af;
+        border: 1px solid var(--highlightmenutext);
         background-color: var(--MainColor);
-        color:  #00ccff;
+        color:  var(--highlightmenutext);
         opacity: 1.0;
         box-shadow: 0px 0px 5px 1px #5989ad;
         -webkit-transition: box-shadow 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
@@ -550,7 +549,7 @@ button,
     outline: none;
     border: 1px solid var(--MainColor);
     background-color: var(--searchDropdown);
-    color: #00ccffde;
+    color: var(--highlightmenutext);
 }
 
 body > table:first-of-type .embedded {
@@ -653,7 +652,7 @@ p.sub > a[name]:target {
 }
 .notification-overlay {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: 10;
     overflow-y: auto;
     top: 0;
@@ -697,13 +696,13 @@ p.sub > a[name]:target {
 .notification,
 .popup {
     border-radius: 3px;
-    background-color: rgba(17, 78, 100, 0.95);
+    background-color: var(--highlightmenutext);
     color: var(--weirdwhite);
-    padding: 4px 8px;
+    padding: 6px 12px;
 }
 .notification:hover,
 .popup:hover {
-    background-color: rgba(67, 81, 86, 0.95);
+    background-color: var(--hovernotifications);
 }
 .popup {
     box-shadow: var(--borderShadow);
@@ -718,28 +717,29 @@ p.sub > a[name]:target {
 }
 .alert-box--pm {
     background-color: var(--DownBonusRed);
-    color: #f8f8ff !important;
+    color: var(--white) !important;
     font-weight: bold;
 }
 .alert-box--notifications {
     background-color: var(--UploadGreen);
-    color: #ffffff !important;
+    color: var(--white) !important;
     font-weight: bold;
 }
 .alert-box--news {
     background-color: var(--selected);
-    color: #ffffff !important;
+    color: var(--white) !important;
     font-weight: bold;
 }
 
 .autocomplete-suggestions {
     background: var(--weirdwhite);
-    color: var(--searchDropdown);
+    color: var(--MenuFontColor);
     border: 1px solid var(--shittyborder);
     box-shadow: none;
 }
 .autocomplete-selected {
-    background: #e2e7e9;
+    background: var(--DarkestColor);
+    color: var(--highlightmenutext);
 }
 .menu {
     border: none;
@@ -750,13 +750,12 @@ p.sub > a[name]:target {
 td.menunavigation,
 td.menunavigation_new {
     background: none;
-    border: transparent;
+    border: 1px solid transparent;
 }
 #menusides:hover,
 td.menunavigation:hover,
 td.menunavigation_new:hover {
 background: none; 
-border: 2px solid transparent var(--DarkestColor); 
 }
 
 td.menunavigation a.normal,
@@ -766,16 +765,20 @@ td.menunavigation_new a.normal {
     width: 100%;
     color: var(--MenuFontColor);
     box-shadow: none;
+    border-bottom: 2px solid transparent;
 }
 td.menunavigation a.normal:active,
 td.menunavigation_new a.normal:active {
-    background-color: var(--MainColor);
-    color: var(--TableCellColor);
+    /* background-color: var(--MainColor); */
+    color: var(--highlightmenutext);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
+
+    /* margin-bottom: -2px; */
 }
+
 td.menunavigation_new a.normal {
     position: relative;
     z-index: 1;
@@ -807,45 +810,40 @@ td.menunavigation_new a.normal::before {
 
 @-webkit-keyframes menuflash {
     100% {
-        background-color: rgb(0, 132, 184);
+        background-color: var(--highlightmenutext);
     }
 }
 @-moz-keyframes menuflash {
     100% {
-        background-color: rgb(0, 132, 184);
+        background-color: var(--highlightmenutext);
     }
 }
 @-o-keyframes menuflash {
     100% {
-        background-color: rgb(0, 183, 255);
+        background-color: var(--highlightmenutext);
     }
 }
 @keyframes menuflash {
     100% {
-        background-color: rgba(45, 135, 209, 0.932);
+        background-color: var(--highlightmenutext);
     }
 }
-
 td.menunavigation a:hover,
 td.menunavigation a:focus,
 td.menunavigation_new a:hover,
 td.menunavigation_new a:focus {
     text-decoration: none;
     content: ""; 
-    background-color: var(--MainColor);
-    border-left: inset solid 1px rgb(0, 106, 148);
-    border-right: inset solid 1px rgb(0, 106, 148);
+    color: var(--highlightmenutext);
+    border-bottom: 2px solid var(--highlightmenutext);
 }
-
 td.menunavigation a:active,
 td.menunavigation_new a:active {
     text-decoration: none;
 }
-
 td#sidebar-container { 
     position: fixed;
     display: block;
-    /* top: 15; */
     padding: 0;
     margin-left: -10px;
     height: auto;
@@ -1089,11 +1087,11 @@ td.bottom > table[width="500"]:first-of-type td a:active {
 }
 #tabs > .tab.selected a {
     background-color: var(--DarkestColor) !important;
-    color: #00ccff !important;
+    color: var(--highlightmenutext) !important;
 }
 #tabs > .tab.selected a:hover {
     background-color: var(--DarkestColor) !important;
-    color: #00ccffee !important;
+    color: var(--highlightmenutext) !important;
 }
 #tabs > .tab a {
     border-radius: 3px;
@@ -1113,23 +1111,28 @@ margin: 8px;
     display: inline-block;
     width: 100%;
     height: 23px;
-line-height: 23px;
+line-height: 21px;
 }
 #tabs > .tab a:hover,
 #tabs > .tab a:focus {
-    background-color: #041824;
-    color: #00ccff;
+    background-color: var(--DarkestColor);
+    color: var(--highlightmenutext);
     text-decoration: none;
+    border-top: 2px solid var(--highlightmenutext);
 
 }
 #tabs > .tab a:active {
-    background-color: #ffffff;
-    color: var(--TableCellColor);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-}
+    /* background-color: var(--TableCellColor); */
+    color: var(--highlightmenutext);
+    border-top: 2px solid var(--highlightmenutext);
+        margin-bottom: -2px !important;
+        background-color: var(--MainColor);
+    }
+    #tabs > .tab a {
+        border-top: 2px solid var(--DarkestColor);
+        margin-bottom: 2px;
+    }
+
 #torrent-list {
     background: none;
     border: none;
@@ -1138,10 +1141,6 @@ line-height: 23px;
     border-collapse: separate;
     border-spacing: 0;
 }
-
-#t549310 > td:nth-child(3) > a:nth-child(7)
-/html/body/table[3]/tbody/tr/td[2]/div/table/tbody/tr[2]/td[3]/a[5]
-
 #torrent-list > tbody > tr {
     -webkit-transition: background-color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out;
@@ -1248,7 +1247,7 @@ line-height: 23px;
 #torrent-list a[href^="/details.php?id="]:hover > font[color],
 #torrent-list a[href^="/details.php?id="]:focus > font[color],
 #torrent-list a[href^="/details.php?id="]:active > font[color] {
-    color: #fff;
+    color: var(--white);
 }
 #torrent-list a > font {
     color: var(--white);
@@ -1327,12 +1326,12 @@ a.fl:active,
 a.internal:hover,
 a.internal:focus,
 a.internal:active {
-    color: #fff;
+    color: var(--white);
 }
 a:hover .fl,
 a:focus .fl,
 a:active .fl {
-    color: #fff;
+    color: var(--white);
 }
 a .fl {
     text-decoration: underline;
@@ -1470,7 +1469,7 @@ html .info__title-nodownloads {
 .pagerel:hover,
 .pagerel:focus,
 .pagerel:active {
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 .pagerel:active {
@@ -2035,7 +2034,7 @@ a.sublink:hover,
 a.sublink:focus,
 a.sublink:active {
     text-shadow: none;
-    color: #fff;
+    color: var(--white);
 }
 td[bgcolor="#F4F4F0"] {
     background: none;
@@ -2609,6 +2608,12 @@ img.minicon:hover {
     background-size: contain !important;
     vertical-align: bottom;
   } */
-.minicon[src="browse_bestanden/download.gif"] {
+/* .minicon[src="browse_bestanden/download.gif"] {
     background-image: url("/f/download.png") !important;
-}
+} */
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    body > table:nth-child(3) > tbody > tr > td:nth-child(2) > table > tbody > tr > td, .chrome {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+} */
