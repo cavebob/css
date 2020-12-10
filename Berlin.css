@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.42
- * Last Updated:   9 December 2020
+ * Version:        0.37
+ * Last Updated:   8 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -2455,123 +2455,129 @@ h2[style="width: 743px;"] {
  padding:0 !important
 }
 .category1 {
- background-image:url(https://i.hdbits.org/NGkqfgw.png)
+ background-image:url(https://i.hdbits.org/vgCy5uk.png)
 }
 .category2 {
- background-image:url(https://i.hdbits.org/nAL3xF9.png)
+ background-image:url(https://i.hdbits.org/QvuuU0P.png)
 }
 .category3 {
- background-image:url(https://i.hdbits.org/Xrkfk1e.png)
+ background-image:url(https://i.hdbits.org/L72FbX6.png)
 }
 .category4 {
- background-image:url(https://i.hdbits.org/geYhqPq.png)
+ background-image:url(https://i.hdbits.org/0qSd3fN.png)
 }
 .category5 {
- background-image:url(https://i.hdbits.org/smxL5Pi.png)
+ background-image:url(https://i.hdbits.org/KIRhZrn.png)
 }
 .category6 {
  background-image:url(https://i.hdbits.org/Yf3RwG1.png)
 }
 .category7 {
- background-image:url(https://i.hdbits.org/IxCCpl7.png)
+ background-image:url(https://i.hdbits.org/o4ObxOc.png)
 }
 .category8 {
- background-image:url(https://i.hdbits.org/E6q5zXI.png)
+ background-image:url(https://i.hdbits.org/0gf3phl.png)
 }
 .catcell {
  padding:0 !important;
  border-width:0 0 1px 1px;
  width:42px
 }
+/*h264*/
 #codec1 .medium1 {
  background-image:url(https://i.hdbits.org/3druP38.png)
 }
 #codec1 .medium3 {
- background-image:url(./h264-encode.png)
+ background-image:url(https://t.hdbits.org/BlFeETU.jpg)
 }
 #codec1 .medium4 {
- background-image:url(./h264-capture.png)
+ background-image:url(https://t.hdbits.org/Y1pYFwF.jpg)
 }
 #codec1 .medium5 {
- background-image:url(./h264-remux.png)
+ background-image:url(https://t.hdbits.org/gVb6Lpy.jpg)
 }
 #codec1 .medium6 {
- background-image:url(./h264-webdl.png)
+ background-image:url(https://t.hdbits.org/LIn4QrM.jpg)
 }
+/*mpeg2*/
 #codec2 .medium1 {
  background-image:url(https://i.hdbits.org/ORdqrkw.png)
 }
 #codec2 .medium3 {
- background-image:url(./mpeg2-encode.png)
+ background-image:url(https://t.hdbits.org/zxH6yGX.jpg)
 }
 #codec2 .medium4 {
- background-image:url(./mpeg2-capture.png)
+ background-image:url(https://t.hdbits.org/eBqXAwj.jpg)
 }
 #codec2 .medium5 {
- background-image:url(./mpeg2-remux.png)
+ background-image:url(https://t.hdbits.org/VqgA9DD.jpg)
 }
 #codec2 .medium6 {
- background-image:url(./mpeg2-webdl.png)
+ background-image:url(https://t.hdbits.org/vt8coq8.jpg)
+ /* vc-1*/
 }
 #codec3 .medium1 {
  background-image:url(https://i.hdbits.org/gm25nCx.png)
 }
 #codec3 .medium3 {
- background-image:url(./vc1-encode.png)
+ background-image:url(https://t.hdbits.org/2qoKrfV.jpg)
 }
 #codec3 .medium4 {
- background-image:url(./vc1-capture.png)
+ background-image:url(https://t.hdbits.org/PVq1Byu.jpg)
 }
 #codec3 .medium5 {
- background-image:url(./vc1-remux.png)
+ background-image:url(https://t.hdbits.org/9E5Sm09.jpg)
 }
 #codec3 .medium6 {
- background-image:url(./vc1-webdl.png)
+ background-image:url(https://t.hdbits.org/ZCkaE8H.jpg)
+ /*xvid*/
 }
 #codec4 .medium1 {
  background-image:url(https://i.hdbits.org/LZXg7BF.png)
 }
 #codec4 .medium3 {
- background-image:url(./xvid-encode.png)
+ background-image:url(https://t.hdbits.org/frNgCxM.jpg)
 }
 #codec4 .medium4 {
- background-image:url(./xvid-capture.png)
+ background-image:url(https://t.hdbits.org/f18mIcU.jpg)
 }
 #codec4 .medium5 {
- background-image:url(./xvid-remux.png)
+ background-image:url(https://t.hdbits.org/RmdfMd6.jpg)
 }
 #codec4 .medium6 {
- background-image:url(./xvid-webdl.png)
+ background-image:url(https://t.hdbits.org/jTIEKez.jpg)
 }
+/*hevc*/
 #codec5 .medium1 {
- background-image:url(https://i.hdbits.org/fS0RLxb.png)
+ background-image:url(https://t.hdbits.org/pHlEnIv.jpg)
 }
 #codec5 .medium3 {
- background-image:url(./hevc-encode.png)
+ background-image:url(https://t.hdbits.org/Jml2DqD.jpg)
 }
 #codec5 .medium4 {
- background-image:url(./hevc-capture.png)
+ background-image:url(https://t.hdbits.org/pZK1DI5.jpg)
 }
 #codec5 .medium5 {
- background-image:url(./hevc-remux.png)
+ background-image:url(https://t.hdbits.org/ohoSf7n.jpg)
 }
 #codec5 .medium6 {
- background-image:url(./hevc-webdl.png)
+ background-image:url(https://t.hdbits.org/fahLYXp.jpg)
 }
+/*vp9*/
 #codec6 .medium1 {
  background-image:url(https://i.hdbits.org/En5u67U.png)
 }
 #codec6 .medium3 {
- background-image:url(./vp9-encode.png)
+ background-image:url(https://t.hdbits.org/AP69O5l.jpg)
 }
 #codec6 .medium4 {
- background-image:url(./vp9-capture.png)
+ background-image:url(https://t.hdbits.org/oahpwbL.jpg)
 }
 #codec6 .medium5 {
- background-image:url(./vp9-remux.png)
+ background-image:url(https://t.hdbits.org/rG0b4wL.jpg)
 }
 #codec6 .medium6 {
- background-image:url(./vp9-webdl.png)
+ background-image:url(https://t.hdbits.org/aBlXpc2.jpg)
 }
 
 /* Subtitle icons */
@@ -2590,7 +2596,7 @@ img[src*="pic/flag/"] {
 img.minicon:hover {
   opacity: 1;
 } */
-/* .minicon[src="/browse_bestanden/download.gif"] {
+/*.minicon[src="/browse_bestanden/download.gif"] {
     width: 20px;
     height: 20px;
     box-sizing: border-box;
@@ -2599,5 +2605,5 @@ img.minicon:hover {
     vertical-align: bottom;
   } */
 /*.minicon[src="browse_bestanden/download.gif"] {
-    background: url("/f/download.png") no-repeat;
+    background-image: url("/f/download.png") !important;
 }*/
