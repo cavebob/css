@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        0.43
+ * Version:        0.44
  * Last Updated:   10 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -1088,13 +1088,17 @@ td.bottom > table[width="500"]:first-of-type td a:active {
     background: none !important;
 }
 #tabs > .tab.selected a {
-    background-color: var(--selected) !important;
-    color: var(--TableCellColor) !important;
+    background-color: var(--DarkestColor) !important;
+    color: #00ccff !important;
+}
+#tabs > .tab.selected a:hover {
+    background-color: var(--DarkestColor) !important;
+    color: #00ccffee !important;
 }
 #tabs > .tab a {
     border-radius: 3px;
-    background-color: var(--TableCellColor);
-    color: var(--selected);
+    background-color: #041824;
+    color: var(--MenuFontColor);
     text-decoration: none;
     box-shadow: var(--borderShadow);
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -1113,9 +1117,10 @@ line-height: 23px;
 }
 #tabs > .tab a:hover,
 #tabs > .tab a:focus {
-    background-color: var(--selected);
-    color: var(--TableCellColor);
+    background-color: #041824;
+    color: #00ccff;
     text-decoration: none;
+
 }
 #tabs > .tab a:active {
     background-color: #ffffff;
@@ -2473,7 +2478,7 @@ h2[style="width: 743px;"] {
  background-image:url(https://i.hdbits.org/Yf3RwG1.png)
 }
 .category7 {
- background-image:url(https://i.hdbits.org/o4ObxOc.png)
+ background-image:url(https://i.hdbits.org/IxCCpl7.png)
 }
 .category8 {
  background-image:url(https://i.hdbits.org/0gf3phl.png)
