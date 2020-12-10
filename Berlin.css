@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        1.1
+ * Version:        1.2
  * Last Updated:   10 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -1501,23 +1501,66 @@ html .rc__film__poster {
 /* html body table.main tbody tr td.bottom div.rc.js-rc div.rc__container.js-rc-container */
 .rc__container.js-rc-container {
     background-color: var(--collapsables);
-
+}
+html body table.main tbody tr td.bottom h3
+{
+    font-size: 13px;
+    color: var(--MenuFontColor);
+    background-color: var(--DarkestColor);
+    box-shadow: var(--borderShadow);
+    width: 850px;
+    padding: 15px;
+    margin-bottom: 0;
+    z-index: 15;
+}
+.film-list-container {
+    width: 900px;
+    background-color: var(--MainColor);
+    box-shadow: var(--borderShadow);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: -1;
+}
+.film-list-sorters {
+    font-size: 11px;
+    display: inline-block;
+    font-weight: 700;
 }
 html body table.main tbody tr td.bottom div.rc.js-rc
 {
     box-shadow: var(--borderShadow);
 
 }
-div.rc:nth-child(6) > div:nth-child(2) > div:nth-child(5) > a:nth-child(2) > div:nth-child(4) > span.movie_name {
+span.movie_name {
     padding-bottom: 5px;
     color: var(--highlightmenutext);
     border-bottom: 1px solid var(--highlightmenutext);
 }
 html .info_row {
-    border-color: var(--white);
+    border-bottom: 1px solid var(--MenuFontColor);
+    padding: 15px;
 }
 html .info__title-nodownloads {
     color: rgba(207, 218, 227, 0.5);
+}
+.info__plot {
+	display: block;
+	margin-top: 4px;
+	min-height: 0;
+}
+.info__genres {
+    font-size: 10px;
+    color: var(--GenresColor);
+	display: block;
+	margin-top: 2px;
+}
+.grid__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	box-sizing: border-box;
 }
 .pagerel {
     font-size: 11px;
