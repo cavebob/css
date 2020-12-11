@@ -2412,7 +2412,6 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > script:firs
     box-sizing: border-box;
     border-collapse: separate;
     border-spacing: 0;
-    width: 1000px;
     /* display: inline-block; */
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="width: 900px; text-align: left"] > div[style*="background-color: #BCCAD6;"]:first-child {
@@ -2481,6 +2480,13 @@ h2[style="width: 743px;"] {
 	padding: 10px 0 10px 10px;
     background-color: var(--DarkestColor);
     box-shadow: var(--borderShadow);
+}
+.spoiler::before {
+	content: "** spoiler **";
+	position: absolute;
+    color: white;
+    background-color: var(--DarkestColor);
+	padding-left: 3px;
 }
 /* Category icons */
 #codec0,
