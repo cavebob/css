@@ -2413,7 +2413,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > script:firs
     border-collapse: separate;
     border-spacing: 0;
     width: 1000px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="width: 900px; text-align: left"] > div[style*="background-color: #BCCAD6;"]:first-child {
     background-color: var(--TableCellColor2) !important;
@@ -2423,9 +2423,9 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="
     border-collapse: separate;
     border-spacing: 0;
 }
-/* body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
+body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
     width: 850px;
-} */
+}
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child > tbody > tr > td > table.main {
     border: 1px solid var(--DarkestColor);
 }
