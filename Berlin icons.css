@@ -1,0 +1,149 @@
+#codec0,
+#codec1,
+#codec2,
+#codec3,
+#codec4,
+#codec5,
+.medium1,
+.medium2,
+.medium3,
+.medium4,
+.medium5,
+.medium6,
+.category1,
+.category2,
+.category3,
+.category4,
+.category5,
+.category6,
+.category7,
+.category8 {
+ height:42px;
+ width:42px;
+ padding:0 !important
+}
+.category1 {
+ background-image:url(https://i.hdbits.org/vgCy5uk.png)
+}
+.category2 {
+ background-image:url(https://i.hdbits.org/QvuuU0P.png)
+}
+.category3 {
+ background-image:url(https://i.hdbits.org/L72FbX6.png)
+}
+.category4 {
+ background-image:url(https://i.hdbits.org/0qSd3fN.png)
+}
+.category5 {
+ background-image:url(https://i.hdbits.org/KIRhZrn.png)
+}
+.category6 {
+ background-image:url(https://i.hdbits.org/Yf3RwG1.png)
+}
+.category7 {
+ background-image:url(https://i.hdbits.org/IxCCpl7.png)
+}
+.category8 {
+ background-image:url(https://i.hdbits.org/0gf3phl.png)
+}
+.catcell {
+ padding:0 !important;
+ border-width:0 0 1px 1px;
+ width:42px
+}
+/*h264*/
+#codec1 .medium1 {
+ background-image:url(https://i.hdbits.org/3druP38.png)
+}
+#codec1 .medium3 {
+ background-image:url(https://i.hdbits.org/BlFeETU.png)
+}
+#codec1 .medium4 {
+ background-image:url(https://i.hdbits.org/Y1pYFwF.png)
+}
+#codec1 .medium5 {
+ background-image:url(https://i.hdbits.org/gVb6Lpy.png)
+}
+#codec1 .medium6 {
+ background-image:url(https://i.hdbits.org/LIn4QrM.png)
+}
+/*mpeg2*/
+#codec2 .medium1 {
+ background-image:url(https://i.hdbits.org/ORdqrkw.png)
+}
+#codec2 .medium3 {
+ background-image:url(https://i.hdbits.org/zxH6yGX.png)
+}
+#codec2 .medium4 {
+ background-image:url(https://i.hdbits.org/eBqXAwj.png)
+}
+#codec2 .medium5 {
+ background-image:url(https://i.hdbits.org/VqgA9DD.png)
+}
+#codec2 .medium6 {
+ background-image:url(https://i.hdbits.org/vt8coq8.png)
+ /* vc-1*/
+}
+#codec3 .medium1 {
+ background-image:url(https://i.hdbits.org/gm25nCx.png)
+}
+#codec3 .medium3 {
+ background-image:url(https://i.hdbits.org/2qoKrfV.png)
+}
+#codec3 .medium4 {
+ background-image:url(https://i.hdbits.org/PVq1Byu.png)
+}
+#codec3 .medium5 {
+ background-image:url(https://i.hdbits.org/9E5Sm09.png)
+}
+#codec3 .medium6 {
+ background-image:url(https://i.hdbits.org/ZCkaE8H.png)
+ /*xvid*/
+}
+#codec4 .medium1 {
+ background-image:url(https://i.hdbits.org/LZXg7BF.png)
+}
+#codec4 .medium3 {
+ background-image:url(https://i.hdbits.org/frNgCxM.png)
+}
+#codec4 .medium4 {
+ background-image:url(https://i.hdbits.org/f18mIcU.png)
+}
+#codec4 .medium5 {
+ background-image:url(https://i.hdbits.org/RmdfMd6.png)
+}
+#codec4 .medium6 {
+ background-image:url(https://i.hdbits.org/jTIEKez.png)
+}
+/*hevc*/
+#codec5 .medium1 {
+ background-image:url(https://i.hdbits.org/pHlEnIv.png)
+}
+#codec5 .medium3 {
+ background-image:url(https://i.hdbits.org/Jml2DqD.png)
+}
+#codec5 .medium4 {
+ background-image:url(https://i.hdbits.org/pZK1DI5.png)
+}
+#codec5 .medium5 {
+ background-image:url(https://i.hdbits.org/ohoSf7n.png)
+}
+#codec5 .medium6 {
+ background-image:url(https://i.hdbits.org/fahLYXp.png)
+}
+/*vp9*/
+#codec6 .medium1 {
+ background-image:url(https://i.hdbits.org/En5u67U.png)
+}
+#codec6 .medium3 {
+ background-image:url(https://i.hdbits.org/AP69O5l.png)
+}
+#codec6 .medium4 {
+ background-image:url(https://i.hdbits.org/oahpwbL.png)
+}
+#codec6 .medium5 {
+ background-image:url(https://i.hdbits.org/rG0b4wL.png)
+}
+#codec6 .medium6 {
+ background-image:url(https://i.hdbits.org/aBlXpc2.png)
+}
