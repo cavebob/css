@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        1.2
+ * Version:        1.3
  * Last Updated:   10 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -25,7 +25,6 @@
     --completed: #ffba49;
     --InternalColor: #FFD56B;
     --HoverHighlight: #041824;
-    --HoverHighlightlight: #c7e7ff;
     --GenresColor: #78baec;
     --borderShadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
     --weirdwhite: #041824; 
@@ -33,7 +32,6 @@
     --highlightmenutext:  #0cf;
     --hovernotifications: #4bdbff;
     --collapsables:  #041824a4;
-    
 }
 .donor {
     background: url("https://i.hdbits.org/0EYQash.png");
@@ -1159,11 +1157,11 @@ line-height: 21px;
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(even).featured {
     background-color: var(--TableCellColor3);
 } 
-#torrent-list > tbody > tr:hover,
+/* #torrent-list > tbody > tr:hover,
 #torrent-list > tbody > tr.featured:hover,
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr.featured:hover {
     background-color: var(--HoverHighlight);
-}
+} */
 #torrent-list > tbody > tr[style="visibility: collapse;"] {
     display: none;
 }
@@ -1388,8 +1386,8 @@ a .fl {
 .genres a:focus,
 .genres a:active {
     text-decoration: underline;
-    color: var(--HoverHighlightlight);
-    opacity: 1.2;
+    color: var(--highlightmenutext);
+    opacity: 1.0;
 }
 td.catcell,
 td[id^="codec"] {
@@ -1502,16 +1500,11 @@ html .rc__film__poster {
 .rc__container.js-rc-container {
     background-color: var(--collapsables);
 }
-html body table.main tbody tr td.bottom h3
-{
+html body table.main tbody tr td.bottom h3 {
     font-size: 13px;
     color: var(--MenuFontColor);
-    background-color: var(--DarkestColor);
-    box-shadow: var(--borderShadow);
-    width: 850px;
     padding: 15px;
-    margin-bottom: 0;
-    z-index: 15;
+    margin-bottom: 10px;
 }
 .film-list-container {
     width: 900px;
@@ -1528,8 +1521,7 @@ html body table.main tbody tr td.bottom h3
     display: inline-block;
     font-weight: 700;
 }
-html body table.main tbody tr td.bottom div.rc.js-rc
-{
+html body table.main tbody tr td.bottom div.rc.js-rc {
     box-shadow: var(--borderShadow);
 
 }
@@ -1677,7 +1669,12 @@ div.statposter_views {
 a.film_morelink,
 a.tv_morelink {
     background-color: var(--DarkestColor);
-    color: var(--white);
+    color: var(--MenuFontColor);
+    text-decoration: none;
+    margin-bottom: -1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid transparent;
 }
 a.film_morelink:hover,
 a.film_morelink:focus,
@@ -1685,8 +1682,17 @@ a.film_morelink:active,
 a.tv_morelink:hover,
 a.tv_morelink:focus,
 a.tv_morelink:active {
-    color: var(--white);
-    text-decoration: underline;
+    color: var(--highlightmenutext);
+    text-decoration: none;
+    border-top: 2px solid var(--highlightmenutext);
+    border-left: 2px solid var(--highlightmenutext);
+    border-right: 2px solid var(--highlightmenutext);
+
+}
+.stattitle {
+    font-size: 14px;
+    color: var(--MenuFontColor);
+    padding: 10px;
 }
 .statbox .statbanner {
     border: none;
