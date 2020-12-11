@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     Berlin
- * Version:        1.3
+ * Version:        1.0
  * Last Updated:   10 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -32,9 +32,6 @@
     --highlightmenutext:  #0cf;
     --hovernotifications: #4bdbff;
     --collapsables:  #041824a4;
-}
-.donor {
-    background: url("https://i.hdbits.org/0EYQash.png");
 }
 #torrent-list tr > td:nth-child(3) > a[href^="/film/info?id="] {
  background-color: var(--MainColor);
@@ -68,13 +65,11 @@
 	width: calc(100% - 2px);
     margin: 2px;
 }
-html body table.main tbody tr td.bottom table#details tbody tr td div#c78210374.hideablecontent div.grid div.grid__50
-{
+html body table.main tbody tr td.bottom table#details tbody tr td div#c78210374.hideablecontent div.grid div.grid__50 {
     margin-right: 15px; 
     width: auto;
 }
-.list-overview__overlay
-{
+.list-overview__overlay {
     width: 25%;
 }
 div.list-overview__overlay div.list-overview__text {
@@ -86,12 +81,10 @@ div.list-overview__overlay div.list-overview__text {
 	width: auto;
     height: 150px;
 }
-#details tbody tr td table.main.tablesorter.table_other_copies tbody
-{
+#details tbody tr td table.main.tablesorter.table_other_copies tbody {
     border: 1px solid var(--DarkestColor);
 }
-td.bottom:nth-child(2) > table:nth-child(4)
-{
+td.bottom:nth-child(2) > table:nth-child(4) {
     box-shadow: var(--borderShadow);
 }
 td.embedded {
@@ -116,11 +109,9 @@ body {
     background: var(--MainColor) url("https://i.hdbits.org/eOJKIzM.png") ;
 }
 body > table.main {
-    /* background: none; */
     border: none;
 }
-html body table.main tbody tr td.bottom form ul#tabs li.tab
-{
+html body table.main tbody tr td.bottom form ul#tabs li.tab {
     font-size: 12px;
     margin: none;
     padding-inline: 5px;
@@ -179,8 +170,7 @@ td.colhead a:visited:active {
     color: var(--white);
     text-decoration: underline;
 }
-html body table.main tbody tr td.bottom form table#searchbox tbody tr td input#search
-{
+html body table.main tbody tr td.bottom form table#searchbox tbody tr td input#search {
     padding: 4px;
     font-size: 12px;
 }
@@ -323,7 +313,6 @@ a:visited,
 a.catlink:link,
 a.catlink:visited {
     color: var(--white);
-    /* text-decoration: underline; */
     -webkit-transition: color 0.2s linear;
     -moz-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
@@ -447,35 +436,17 @@ body > table:first-of-type {
     top: 0;
     left: 0;
     z-index: 2;
-    /* height: 100px; */
     margin: 0 !important;
     background-color: var(--DarkestColor);
-    
 }
-/* #sitesearchform {
-    width: 220px;
-    height: 22px;
-    position: relative;
-}
-body > table:first-of-type #sitesearch {
-    text-align: center;
-}
-body > table:first-of-type #searchselector li {
-    margin: 0 0 5px 5px;
-}
-body > table:first-of-type #sitesearchform {
-    display: inline-block;
-} */
 #sitesearch {
     text-align: center;
     margin-bottom: 20px;      
     }
 
-#searchselector .selected{
+#searchselector .selected {
     color:  var(--highlightmenutext);
     font-size: 11px;
-    /* background-color: var(--MainColor); */
-    /* padding-bottom: 6px; */
 }
 
     #searchselector > li {
@@ -500,7 +471,6 @@ body > table:first-of-type #sitesearchform {
         margin-top: 2px;
           font-size: 13px;
     }
-    
     #sitesearchsubmit {
         float: center;
       padding: 11px 11px;
@@ -514,19 +484,16 @@ body > table:first-of-type #sitesearchform {
       cursor: pointer;
       border-radius: 0;
     }
-    
     input#sitesearchinput::placeholder {
         color: var(--highlightmenutext);
         opacity: 0.5;
     }
-    
     input#sitesearchinput:hover {
     border: 1px solid var(--highlightmenutext);
     }
     #sitesearchsubmit:hover {
 opacity: 1.0;
     }
-    
     div#sitesearch form#sitesearchform input#sitesearchinput:focus, textarea:focus, button:focus, .button:focus {
         border: 1px solid var(--highlightmenutext);
         background-color: var(--MainColor);
@@ -543,13 +510,11 @@ select,
 textarea,
 button,
 .button {
-    /* padding: 2px; */
     outline: none;
     border: 1px solid var(--MainColor);
     background-color: var(--searchDropdown);
     color: var(--highlightmenutext);
 }
-
 body > table:first-of-type .embedded {
     text-align: right;
     padding: 0 5px;
@@ -631,7 +596,6 @@ div#logo {
     width: 0;
     background-position: 0;
 }
-
 #topsex {
     background-position-x: center !important;
     background-size: 100% 15px !important;
@@ -728,7 +692,6 @@ p.sub > a[name]:target {
     color: var(--darkestcolor) !important;
     font-weight: bold;
 }
-
 .autocomplete-suggestions {
     background: var(--weirdwhite);
     color: var(--MenuFontColor);
@@ -755,7 +718,6 @@ td.menunavigation:hover,
 td.menunavigation_new:hover {
 background: none; 
 }
-
 td.menunavigation a.normal,
 td.menunavigation_new a.normal {
     padding-top: 5px;
@@ -767,16 +729,12 @@ td.menunavigation_new a.normal {
 }
 td.menunavigation a.normal:active,
 td.menunavigation_new a.normal:active {
-    /* background-color: var(--MainColor); */
     color: var(--highlightmenutext);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
-
-    /* margin-bottom: -2px; */
 }
-
 td.menunavigation_new a.normal {
     position: relative;
     z-index: 1;
@@ -789,7 +747,6 @@ td.menunavigation_new a.normal:active::before {
     -o-animation: none;
     animation: none;
 }
-
 td.menunavigation_new a.normal::before {
     content: "";
     position: absolute;
@@ -805,7 +762,6 @@ td.menunavigation_new a.normal::before {
     -o-animation: menuflash 1600ms infinite alternate;
     animation: menuflash 1600ms infinite alternate;
 }
-
 @-webkit-keyframes menuflash {
     100% {
         background-color: var(--highlightmenutext);
@@ -852,7 +808,6 @@ td#sidebar-container {
     transition: width 0.15s ease;
     width: 20px;
 }
-
 td#sidebar-container .main {
     position: relative;
     background-color: var(--DarkestColor);
@@ -860,7 +815,6 @@ td#sidebar-container .main {
     /* margin: 90px 0 10px 0; */
     padding: 0;
 } 
-
 td#sidebar-container .main::before {
     width: 100%;
     height: 100%;
@@ -868,7 +822,6 @@ td#sidebar-container .main::before {
     border-radius: 0 5px 5px 0;
     background-color: var(--DarkestColor);
 } 
-
 td#sidebar-container:hover {
     -webkit-transition: none;
     -moz-transition: none;
@@ -986,8 +939,7 @@ td#sidebar-container .main::before {
     td#sidebar-container + * {
         padding-left: 177px;
     }
-} */
-
+}
 td#sidebar-container form > select {
     width: 150px;
 }
@@ -995,7 +947,6 @@ td#sidebar-container .embedded {
     background-color: var(--DarkestColor);
     border: solid var(--DarkestColor) 1px;
     box-shadow: var(--borderShadow);
-    /* padding: 0; */
 }
 td#sidebar-container .embedded table,
 td#sidebar-container .embedded h2 {
@@ -1105,11 +1056,11 @@ td.bottom > table[width="500"]:first-of-type td a:active {
     box-shadow: var(--borderShadow);
     padding: 0px;
     font-size: 12px;
-margin: 8px;
+    margin: 8px;
     display: inline-block;
     width: 100%;
     height: 23px;
-line-height: 21px;
+    line-height: 21px;
 }
 #tabs > .tab a:hover,
 #tabs > .tab a:focus {
@@ -1120,17 +1071,15 @@ line-height: 21px;
 
 }
 #tabs > .tab a:active {
-    /* background-color: var(--TableCellColor); */
     color: var(--highlightmenutext);
     border-top: 2px solid var(--highlightmenutext);
-        margin-bottom: -2px !important;
-        background-color: var(--MainColor);
+    margin-bottom: -2px !important;
+    background-color: var(--MainColor);
     }
     #tabs > .tab a {
         border-top: 2px solid var(--DarkestColor);
         margin-bottom: 2px;
     }
-
 #torrent-list {
     background: none;
     border: none;
@@ -1157,11 +1106,6 @@ line-height: 21px;
 .js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr:nth-of-type(even).featured {
     background-color: var(--TableCellColor3);
 } 
-/* #torrent-list > tbody > tr:hover,
-#torrent-list > tbody > tr.featured:hover,
-.js-source-data[data-source="bookmark"] + #torrent-list > tbody > tr.featured:hover {
-    background-color: var(--HoverHighlight);
-} */
 #torrent-list > tbody > tr[style="visibility: collapse;"] {
     display: none;
 }
@@ -1346,7 +1290,6 @@ a .fl {
 .tag.new {
     background-color: var(--DownBonusRed);
 }
-   
 .tag.freeleech {
     background-color:var(--RatioBlue);
 }
@@ -1365,7 +1308,6 @@ a .fl {
 .tag.tag_incomplete {
  background-color: var(--DownBonusRed);
 }
-   
 #torrent-list .tag.new {
     float: left;
     margin-left: 0;
@@ -1458,7 +1400,6 @@ html .rc__film__poster {
     padding: 15px;
     background: var(--DarkestColor);
     color: var(--highlightmenutext);
-    /* border-top: 3px solid var(--highlightmenutext); */
     border-bottom: 3px solid var(--MenuFontColor);
 }
 .rc__downloads {
@@ -1467,7 +1408,6 @@ html .rc__film__poster {
 	left: 0;
 	padding: 2px 5px;
 	border-radius: 4px 4px 0 0;
-
     background-color: var(--DarkestColor) !important ;
     color: var(--highlightmenutext) !important ;
 	font-size: 11px !important;
@@ -1496,7 +1436,6 @@ html .rc__film__poster {
 	padding: 16px 10px 0;
 	overflow: hidden;
 }
-/* html body table.main tbody tr td.bottom div.rc.js-rc div.rc__container.js-rc-container */
 .rc__container.js-rc-container {
     background-color: var(--collapsables);
 }
@@ -1523,7 +1462,6 @@ html body table.main tbody tr td.bottom h3 {
 }
 html body table.main tbody tr td.bottom div.rc.js-rc {
     box-shadow: var(--borderShadow);
-
 }
 span.movie_name {
     padding-bottom: 5px;
@@ -1687,7 +1625,6 @@ a.tv_morelink:active {
     border-top: 2px solid var(--highlightmenutext);
     border-left: 2px solid var(--highlightmenutext);
     border-right: 2px solid var(--highlightmenutext);
-
 }
 .stattitle {
     font-size: 14px;
@@ -1893,25 +1830,25 @@ td.comment table.main {
 .unlockednew {
     width: 32px;
     height: 32px;
-    background: url("https://i.imgur.com/j7EffKX.png") no-repeat center;
+    background: url("https://i.hdbits.org/GxbVFLa.png") no-repeat center;
 }
 .unlocked {
     width: 32px;
     height: 32px;
-    background: url("https://i.imgur.com/sKZGwfn.png") no-repeat center;
+    background: url("https://i.hdbits.org/M6TLjTy.png") no-repeat center;
 }
 .lockednew {
     width: 32px;
     height: 32px;
-    background: url("https://i.imgur.com/tm8gdX6.png") no-repeat center;
+    background: url("https://i.hdbits.org/8lWQo2y.png") no-repeat center;
 }
 .locked {
     width: 32px;
     height: 32px;
-    background: url("https://i.imgur.com/ep9G7kI.png") no-repeat center;
+    background: url("https://i.hdbits.org/I0VUD3S.png") no-repeat center;
 }
 .hasposted::after {
-    content: url("https://i.imgur.com/sNDgx57.png");
+    content: url("https://i.hdbits.org/1OJzs1n.png");
     height: 10px;
     width: 10px;
     top: 6px;
@@ -1919,7 +1856,7 @@ td.comment table.main {
     position: relative;
 }
 img[src="/pic/info/icon_profile.gif"] {
-    background-image: url("https://i.imgur.com/bm9YdX1.png");
+    background-image: url("https://i.hdbits.org/jMYfQBh.png");
     background-repeat: no-repeat;
     background-size: 57px 20px;
     height: 20px;
@@ -1927,7 +1864,7 @@ img[src="/pic/info/icon_profile.gif"] {
     width: 0;
 }
 img[src="/pic/info/icon_pm.gif"] {
-    background-image: url("https://i.imgur.com/47DvxZA.png");
+    background-image: url("https://i.hdbits.org/2isJ4Mk.png");
     background-repeat: no-repeat;
     background-size: 57px 20px;
     height: 20px;
@@ -1935,7 +1872,7 @@ img[src="/pic/info/icon_pm.gif"] {
     width: 0;
 }
 img[src="/pic/info/icon_www.gif"] {
-    background-image: url("https://i.imgur.com/wRDQTUh.png");
+    background-image: url("https://i.hdbits.org/Lf6wad3.png");
     background-repeat: no-repeat;
     background-size: 57px 20px;
     height: 20px;
@@ -1943,7 +1880,7 @@ img[src="/pic/info/icon_www.gif"] {
     width: 0;
 }
 img[src="/pic/icon_latest_reply.gif"] {
-    background-image: url("https://i.imgur.com/bxhTY8N.png");
+    background-image: url("https://i.hdbits.org/nlAsE9F.png");
     background-repeat: no-repeat;
     background-size: 18px 9px;
     height: 9px;
@@ -2050,7 +1987,7 @@ td[style*="border-left: 1px solid black;"] {
     border: none !important;
 }
 tr[bgcolor="#436c80"] {
-    background-color: #624b1d;
+    background-color: none;
 }
 #showpage {
     background-color: var(--TableCellColor2);
@@ -2475,6 +2412,8 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > script:firs
     box-sizing: border-box;
     border-collapse: separate;
     border-spacing: 0;
+    width: 1000px;
+    display: inline-block;
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="width: 900px; text-align: left"] > div[style*="background-color: #BCCAD6;"]:first-child {
     background-color: var(--TableCellColor2) !important;
@@ -2543,8 +2482,6 @@ h2[style="width: 743px;"] {
     background-color: var(--DarkestColor);
     box-shadow: var(--borderShadow);
 }
-
-
 /* Category icons */
 #codec0,
 #codec1,
@@ -2695,37 +2632,12 @@ h2[style="width: 743px;"] {
 #codec6 .medium6 {
  background-image:url(https://i.hdbits.org/aBlXpc2.png)
 }
-
-/* Subtitle icons */
-/* apply to all /pic/flag/ icons */ 
+/* Subtitle icons - apply to all /pic/flag/ icons */ 
 img[src*="pic/flag/"] { 
    width: 30px;
    object-fit: none;
-   filter: grayscale(40%);
+   filter: grayscale(20%);
 }
 #subcell div span {
     display: none;
 }
-/* img.minicon {
-    opacity: 0.85;
-}
-img.minicon:hover {
-  opacity: 1;
-} */
-/*.minicon[src="/browse_bestanden/download.gif"] {
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
-    padding-left: 20px;
-    background-size: contain !important;
-    vertical-align: bottom;
-  } */
-/* .minicon[src="browse_bestanden/download.gif"] {
-    background-image: url("/f/download.png") !important;
-} */
-/* @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-    body > table:nth-child(3) > tbody > tr > td:nth-child(2) > table > tbody > tr > td, .chrome {
-    padding-left: 15px;
-    padding-right: 15px;
-    }
-} */
