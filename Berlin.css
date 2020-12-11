@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     Berlin
  * Version:        1.0
- * Last Updated:   10 December 2020
+ * Last Updated:   11 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -2423,9 +2423,9 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="
     border-collapse: separate;
     border-spacing: 0;
 }
-body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
+/* body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
     width: 850px;
-}
+} */
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child > tbody > tr > td > table.main {
     border: 1px solid var(--DarkestColor);
 }
