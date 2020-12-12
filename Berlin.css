@@ -2481,6 +2481,12 @@ h2[style="width: 743px;"] {
     background-color: var(--DarkestColor);
     box-shadow: var(--borderShadow);
 }
+.spoiler {
+	background-color: var(--DarkestColor);
+	color: var(--DarkestColor);
+	min-width: 70px;
+	display: inline-block;
+}
 .spoiler::before {
 	content: "** spoiler **";
 	position: absolute;
